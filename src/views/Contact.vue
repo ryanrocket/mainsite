@@ -8,7 +8,7 @@
     <contact header="Let's Work Together"/>
     <script type="application/javascript">
       grecaptcha.ready(function() {
-        grecaptcha.execute('r6Lezia8UAAAAAI5UuY8ssi7oC38uO_g3QFxOT8NE', {action: 'login'});
+        grecaptcha.execute('6Lezia8UAAAAAI5UuY8ssi7oC38uO_g3QFxOT8NE', {action: 'login'});
       });
     </script>
   </div>

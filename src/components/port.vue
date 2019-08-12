@@ -55,7 +55,8 @@
                             The backend uses Node.js and Express and is currently hosted serverless.
                             RWApi is also in the works.
                         </h5>
-                    </div><br><br><br>
+                    </div>
+                </div><br><br><br>
                 <div secthr id="slipe" >
                     <img id="cus-x1-rtf" alt="header setter logo" src="../assets/hslogo.png">
                     <div class="vl"/>
@@ -66,7 +67,7 @@
                             libraries to choose from and get to set search-engine friendly meta data. This is
                             a Vue app with SCSS and Vue-Materials. It uses serverless hosting.
                         </h5>
-                    </div><
+                    </div>
                 </div><br><br><br><br>
             </div><br><br><br><br>
         </div><br><br><br><br>

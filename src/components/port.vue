@@ -27,7 +27,7 @@
                     <div class="pd" grtf>
                         <h1><b>AgileDB &nbsp; v1.0.9</b></h1>
                         <h5>AgileDB is lightweight database management system, designed to be easy to use and,
-                            to work efficiently. 
+                            to work efficiently.
                             ADB creates non-relational databases in JSON format and provides packages
                             for languages such as Python, Node.js, and a CLI. ADB leaves a small footprint so you
                             can easily share ADB Database Files and use them without and hassle.
@@ -50,7 +50,7 @@
                     <div class="vl"/>
                     <div class="pd" ghju>
                         <h1><b>Personal Website &nbsp; v2.6.5 b17287</b></h1>
-                        <h5>ryanwans.com my personal website to showcase my portfolio and skills as a 
+                        <h5>ryanwans.com my personal website to showcase my portfolio and skills as a
                             full stack developer. I made the site with Vue.js, Bootstrap, and SCSS.
                             The backend uses Node.js and Express and services are stored in docker containers.
                             RWApi is also in the works.
@@ -62,7 +62,7 @@
     </div>
 </template>
 
-<style scoped lang="scss"> 
+<style scoped lang="scss">
 @import '../app.scss';
 @import '../compile.scss';
 .grecaptcha-badge {
@@ -72,8 +72,8 @@
 
 <script>
 export default {
-    name: 'port',
-    props: ['header']
+  name: 'port',
+  props: ['header'],
 };
-try{AOS.init()}catch(e){}
+try { AOS.init(); } catch (e) {}
 </script>

@@ -10,12 +10,12 @@
 <script>
 export default {
   name: 'index',
-  props: ['motd', 'jtitle']
+  props: ['motd', 'jtitle'],
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"> 
+<style scoped lang="scss">
 @import '../app.scss';
 @import '../compile.scss';
 </style>

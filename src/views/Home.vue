@@ -33,14 +33,13 @@ export default {
     index,
   },
   methods: {
-  isMobile() {
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      return true;
-    } else {
+    isMobile() {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true;
+      }
       return false;
-    }
+    },
   },
- }
 };
 
 </script>

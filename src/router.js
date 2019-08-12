@@ -11,7 +11,7 @@ Vue.use(VueCookies);
 VueCookies.config('7d');
 VueCookies.set('theme', 'default');
 VueCookies.set('unique', Date.now());
-VueCookies.set('rwapi-uuid', `v3-${Date.now()}-x9k0`)
+VueCookies.set('rwapi-uuid', `v3-${Date.now()}-x9k0`);
 
 export default new Router({
   mode: 'history',

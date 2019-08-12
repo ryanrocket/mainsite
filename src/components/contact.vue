@@ -24,11 +24,11 @@
         function ConvertFormToJSON(form){
             var array = jQuery(form).serializeArray();
             var json = {};
-            
+
             jQuery.each(array, function() {
                 json[this.name] = this.value || '';
             });
-            
+
             return json;
         }
         $('.poster').bind('submit',function(e){
@@ -47,7 +47,7 @@
     </div>
 </template>
 
-<style scoped lang="scss"> 
+<style scoped lang="scss">
 @import '../app.scss';
 @import '../compile.scss';
 html, body {width: 100%; height: 100%; overflow: hidden;}
@@ -56,10 +56,10 @@ html, body {width: 100%; height: 100%; overflow: hidden;}
 
 <script>
 export default {
-    name: 'contact',
-    props: ['header']
+  name: 'contact',
+  props: ['header'],
 };
-try{AOS.init()}catch(e){}
+try { AOS.init(); } catch (e) {}
 window.innerHeight = screen.availHeight;
 window.innerWidth = screen.availWidth;
 </script>

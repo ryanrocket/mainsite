@@ -4,7 +4,7 @@
   <div class="lgn" >
     <div id="login">
         <h2 id="lh">
-            RW-API Login 
+            RW-API Login
         </h2>
         <br><br><br>
         <form class="concurrentform">
@@ -26,11 +26,11 @@
         function ConvertFormToJSON(form){
             var array = jQuery(form).serializeArray();
             var json = {};
-            
+
             jQuery.each(array, function() {
                 json[this.name] = this.value || '';
             });
-            
+
             return json;
         }
         $('.concurrentform').bind('submit',function(e){
@@ -52,15 +52,15 @@
 <script>
 export default {
   name: 'login',
-  props: []
+  props: [],
 };
 
 // assume jquery
-$('body').addClass('stop-scrolling')
+$('body').addClass('stop-scrolling');
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"> 
+<style scoped lang="scss">
 @import '../app.scss';
 @import '../compile.scss';
 </style>

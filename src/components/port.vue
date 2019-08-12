@@ -52,10 +52,21 @@
                         <h1><b>Personal Website &nbsp; v2.6.5 b17287</b></h1>
                         <h5>ryanwans.com my personal website to showcase my portfolio and skills as a
                             full stack developer. I made the site with Vue.js, Bootstrap, and SCSS.
-                            The backend uses Node.js and Express and services are stored in docker containers.
+                            The backend uses Node.js and Express and is currently hosted serverless.
                             RWApi is also in the works.
                         </h5>
-                    </div>
+                    </div><br><br><br>
+                <div secthr id="slipe" >
+                    <img id="cus-x1-rtf" alt="header setter logo" src="../assets/hslogo.png">
+                    <div class="vl"/>
+                    <div class="pd" ghju>
+                        <h1><b>Header Setter &nbsp; v1.6.5</b></h1>
+                        <h5>Header Setter (headersetter.us) is a small web application that I created to 
+                            quickly create clean, efficient HTML head's. You get a variety of JS and CSS 
+                            libraries to choose from and get to set search-engine friendly meta data. This is
+                            a Vue app with SCSS and Vue-Materials. It uses serverless hosting.
+                        </h5>
+                    </div><
                 </div><br><br><br><br>
             </div><br><br><br><br>
         </div><br><br><br><br>

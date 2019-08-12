@@ -1,5 +1,19 @@
+<!-- Downstream Count: 2 -->
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="abouttitle">
+    <!-- downstream underflow file -->
+    <about header="About Me"/>
   </div>
 </template>
+
+<script>
+import about from '@/components/about.vue';
+
+export default {
+  name: 'ABOUT',
+  components: {
+    about,
+  },
+};
+</script>

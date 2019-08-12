@@ -1,17 +1,144 @@
+<!-- Downstream Count: 0 ORIGIN -->
+
 <!DOCTYPE html>
+<!-- Ryan Wans Full Stack Developer -->
+
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>client</title>
+
+    <!-- document meta data -->
+    <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <!-- webmaster meta data -->
+      <BASE HREF="<%= BASE_URL %>">
+      <meta name="title" content="Ryan Wans - Software Developer">
+      <meta name="description" content="Ryan Wans Is A Professional Full Stack Software Developer, Who Has A Passion For Creating A Responsive, Intuitive User Experience.">
+      <meta name="keywords" content="fullstack, ryanwans, ryan wans, wans, ryan, software developer, software developer,    software engineer, engineer, software, code, programmer, professional software developer, developer, developer for hire">
+      <meta name="robots" content="index, nofollow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="English">
+      <meta name="revisit-after" content="2 days">
+      <meta name="author" content="Ryan Wans">
+
+    <!-- cdn list -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Dosis:500&amp;text=Vue.js" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lezia8UAAAAAI5UuY8ssi7oC38uO_g3QFxOT8NE"></script>
+
+
+    <!-- global css classes -->
+    <style>
+    .fpo {z-index: 0!important;}
+    .shadowNav {z-index: 500!important;}
+    .floating {  
+        top: 0;
+        bottom: 100%;
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes floating {
+        from { transform: translate(0,  0px); }
+        40%  { transform: translate(0, -15px); }
+        to   { transform: translate(0, -0px); }    
+    }
+    .floatingside {  
+        top: 0;
+        bottom: 100%;
+        animation-name: floatingside;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes floatingside {
+        from { transform: translate(0,  0px); }
+        40%  { transform: translate(-15px, 0px); }
+        to   { transform: translate(0, -0px); }    
+    }
+    .pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.4;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.4;
+    }
+}
+    </style>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but client doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but this site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app">
+      
+    </div>
   </body>
+  <script local-asset ignore-vue-pfr inc-index>
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 30) {
+           $('#nav').addClass('shadowNav');
+        }
+        else {
+           $('#nav').removeClass('shadowNav');
+        }
+    });
+    </script>
+    <script local-asset title-inter edit-none>
+      let gft;
+      (window.location.pathname === "" || window.location.pathname === "/")
+        ? (gft = "Home")
+        : (gft = window.location.pathname);
+      window.document.title = "Ryan Wans";
+    </script>
+    <style>
+      .fpo {
+        text-align: left;
+        margin-left: -78%;
+        margin-top: -57px;
+        position:initial;
+        z-index: 0;
+        width: 90%;
+        height: 100%;
+      }
+      .fposs {
+        text-align: left;
+        margin-left: -78%;
+        bottom: 0;
+        position: absolute;;
+        z-index: 0;
+        width: 70%;
+        height: auto;
+        filter: hue-rotate(300deg);
+        opacity: 0.5;
+      }
+     </style>
+     <script local-asset jquery-prop>
+       $('.fpo').css('height', window.innerHeight + "px");
+     </script>
+
+    <!-- FINAL -->
+    <script global-scope final>
+      setTimeout(function(){AOS.init()}, 100);
+    </script>
 </html>

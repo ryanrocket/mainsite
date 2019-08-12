@@ -1,31 +1,25 @@
+<!-- Downstream Count: 1 -->
+<script src="./assets/scripts/gipe.cust.js"></script>
+
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="shadowNav navbar-expand-sm navbar-light" id="nav" data-aos="fade-down" data-aos-duration="1100">
+      <a href="/" id="logo">Ryan Wans</a>
+      <div class="links">
+        <a href='/about' id="lynk">About</a>
+        <a href='/portfolio' id="lynk">Portfolio</a>
+        <a href='/contact' id="lynk">Contact</a>
+        <a href='/login' id="lynk">Login</a>
+      </div>
     </div>
     <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lang="scss" scoped>
+   @import 'app.scss';
+   @import 'screensize.scss';
 </style>
+
+<script>
+</script>

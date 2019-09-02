@@ -1,0 +1,33 @@
+{
+	"students": [ "ryanwans", "jackwoods" ],
+	"schema": {
+		"ryanwans": {
+			"perm": "admin",
+			"classlist": {
+				"A": [],
+				"B": []
+			}
+		},
+		"jackwoods": {
+			"perm": "user",
+			"classlist": {
+				"A": [],
+				"B": []
+			}
+		}
+	},
+	"config": {
+		"commons": {
+			"dayStart": "",
+			"classLength": "",
+			"dayEnd": "",
+			"classBreak": "",
+			"classPerDay": "",
+			"checkAddition": true
+		},
+		"dispTime": "12hr/?fail/24hr",
+		"responsive": false,
+		"regexTime": "/^h:%m*m$:(t)| |(am)||(pm)/g",
+		"reloadTime": "1sec/?fail/0.5sec"
+	}
+}

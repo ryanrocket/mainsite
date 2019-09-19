@@ -12,6 +12,9 @@ export default {
   name: 'index',
   props: ['motd', 'jtitle'],
 };
+(window.location.href === '/')
+    ? (console['log']("Rendered Index Page Successfully");)
+    : (console['warn']("An Internal Warning Occured");)
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

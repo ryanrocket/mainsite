@@ -33,14 +33,15 @@
 </template>
 
 <script>
-import * as manager from "../assets/school/manager.ts";
 import { setInterval, setTimeout } from "timers";
-$(document).ready(function() {
-  setTimeout(function() {}, 1000);
+import * as manager from "../assets/school/manager.ts";
+import * as db from "../assets/school/sched.json";
+$(document).ready(() => {
+  setTimeout(() => {}, 1000);
   manager.use("moment");
-  manager.grabData(true);
+  manager.grabData(true, db);
   manager.replaceElm("#date", "date");
-  setInterval(function() {
+  setInterval(() => {
     // event loop
     manager.replaceElm("#curtime", "timenow");
   }, 1000);

@@ -4,7 +4,7 @@
 		"ryanwans": {
 			"perm": "admin",
 			"classlist": {
-				"A": [],
+				"A": [ "US Government" ],
 				"B": []
 			}
 		},
@@ -18,11 +18,11 @@
 	},
 	"config": {
 		"commons": {
-			"dayStart": "",
+			"dayStart": "7:20",
 			"classLength": "",
-			"dayEnd": "",
-			"classBreak": "",
-			"classPerDay": "",
+			"dayEnd": "2:18",
+			"classBreak": "4",
+			"classPerDay": "5",
 			"checkAddition": true
 		},
 		"dispTime": "12hr/?fail/24hr",

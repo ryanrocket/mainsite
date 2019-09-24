@@ -1,50 +1,25 @@
 var MA_USING = [],
 	MA_LOCAL = {},
-	MA_HARDCOPY = {
-		students: [ 'ryanwans', 'jackwoods' ],
-		schema: {
-			ryanwans: {
-				perm: 'admin',
-				classlist: {
-					A: [],
-					B: []
-				}
-			},
-			jackwoods: {
-				perm: 'user',
-				classlist: {
-					A: [],
-					B: []
-				}
-			}
-		},
-		config: {
-			commons: {
-				dayStart: '',
-				classLength: '',
-				dayEnd: '',
-				classBreak: '',
-				classPerDay: '',
-				checkAddition: true
-			},
-			dispTime: '12hr/?fail/24hr',
-			responsive: false,
-			regexTime: '/^h:%m*m$:(t)| |(am)||(pm)/g',
-			reloadTime: '1sec/?fail/0.5sec'
-		}
-	};
+	MA_DB = {};
+
+var fs = require('fs');
 
 export function use(a) {
 	MA_USING.push(a);
 	(function() {})();
 }
-export function grabData(a) {
+export function grabData(a, b) {
 	if (a) {
 		let A = moment();
 		if (A !== null) {
 			MA_LOCAL['date'] = A.format('LL');
 			MA_LOCAL['time'] = A.format('LTS');
 		}
+		// let rawdata = fs.readFileSync('./sched.json');
+		// MA_DB = JSON.parse(rawdata);
+		MA_DB = b.default || b['default'];
+
+		return 'db load complete';
 	} else {
 		console['warn']('Date Grabbing Disabled');
 	}

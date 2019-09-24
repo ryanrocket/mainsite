@@ -15,7 +15,7 @@
                 Message Subject<br>
                 <input type="text" placeholder="" id="inr4" name="subject"/><br><br>
                 Message Content<br>
-                <textarea rows="4" type="text" placeholder=". . ." id="mer4" name="message"/><br><br>
+                <textarea rows="4" type="text" placeholder="  . . ." id="mer4" name="message"/><br><br>
                 <button type="submit" text="Submit" id='submb'>Submit</button>
             </form><br>
             <p id="subtextr">Message Application Uses <b>reCAPTCHA</b> Authentication</p>

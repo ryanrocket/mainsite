@@ -101,7 +101,7 @@
             </h1>
             <h5>
               Header Setter (
-              <a href="https://headersetter.us">headersetter.us</a>) is a small web application that I created to
+              <a href="https://headersetter.us">headersetter.us</a> ) is a small web application that I created to
               quickly create clean, efficient HTML head's. You get a variety of JS and CSS
               libraries to choose from and get to set search-engine friendly meta data. This is
               a Vue app with SCSS and Vue-Materials. It uses serverless hosting.

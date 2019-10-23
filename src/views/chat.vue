@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import chatbox from "@/components/chatbox.vue";
+import chatbox from '@/components/chatbox.vue';
 
 export default {
-  name: "CHAT",
+  name: 'CHAT',
   components: {
-    chatbox
-  }
+    chatbox,
+  },
 };
 </script>
 

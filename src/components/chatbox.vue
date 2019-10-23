@@ -11,7 +11,7 @@
                 - Whos Typing?
                 - Chat Rules // Tips?
                 - ONLY ONE
-            
+
             Only do these three to obtain a SIMPLE and CLEAN chatbox.
 
             Use Socket.io for seamless socketing
@@ -43,12 +43,12 @@
 
 <script>
 export default {
-  name: "chatbox",
+  name: 'chatbox',
   props: [],
   data() {
     return {
       isConnected: false,
-      socketMessage: ""
+      socketMessage: '',
     };
   },
 
@@ -65,18 +65,18 @@ export default {
     // Fired when the server sends something on the "messageChannel" channel.
     messageChannel(data) {
       this.socketMessage = data;
-    }
+    },
   },
 
   methods: {
     pingServer() {
       // Send the "pingServer" event to the server.
-      this.$socket.emit("pingServer", "PING!");
-    }
-  }
+      this.$socket.emit('pingServer', 'PING!');
+    },
+  },
 };
 
-console.log("Rendered Index Page Successfully");
+console.log('Rendered Index Page Successfully');
 </script>
 
 <style lang="scss" scoped>

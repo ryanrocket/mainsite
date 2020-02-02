@@ -16,7 +16,7 @@
             <input type="checkbox" id="rd" name="remember"/>
             <br>
             <br>
-            <button type="submit" id="subnow">Login</button>
+            <button type="submit" id="subnow" onclick="failure()">Login</button>
         </form><br>
         <p id="subtextr">Login Application Uses <b>reCAPTCHA</b> Authentication</p>
         <br>
@@ -45,6 +45,9 @@
                 dataType: "json"
             });
         });
+        function failure() {
+            window.alert("Login Credentials Invalid");
+        }
     </script>
   </div>
 </template>
@@ -54,6 +57,7 @@ export default {
   name: 'login',
   props: [],
 };
+
 
 // assume jquery
 $('body').addClass('stop-scrolling');
